@@ -62,4 +62,6 @@ print(len('Hvor lang er jeg? (hint: 28)'))
 print("hej" in "hej med dig")  # Tester om hej er i strengen, og returnerer True eller False
 print("verden" in "hej med dig")  # Tester om hej er i strengen, og returnerer True eller False
 
+# Man kan køre en snippet (markering) af kode med Shift+Alt+e
+
 
