@@ -19,3 +19,14 @@ print( 10 + 5j )
 print(type(5))
 print(type(5.3))
 print(type(5+3j))
+
+#Strenge:
+print("Her er en streng med \'dobbelt citationstegn\'")
+print('Her er en streng med "enkelte citationstegn"')
+print(type("hej"))
+
+#Boolske variable/værdier:
+print(True)
+print(False)
+print(type(True))
+
