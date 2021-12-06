@@ -58,3 +58,30 @@ def funktion():
 funktion()
 print(z)
 
+# Men inde i en funktion kan en variabel udenfor godt sættes eller ændres, med keyword "global":
+z=5
+def funktion():
+    global z
+    z = 10
+funktion()
+print(z)
+
+
+# En familiefunktion med mange input:
+def familiefunktion(navn1,navn2,navn3):
+    print(navn1)
+    print(navn2)
+    print(navn3)
+familiefunktion("Jens","Hans","Lone")
+# Det kan være svært at holde styr på hvad der er hvad af inputvariable.
+# Så de kan anføres mere eksplicit:
+familiefunktion(navn1="Jens",navn3="Hans",navn2="Lone")
+
+# Når man i funktioner begynder at definere default-argumenter i input, så skal ALLE derefter have default-værdier:
+# F.eks.:
+# familiefunktion(navn1,navn2,navn3="Jens") er lovligt
+# mens:
+# familiefunktion(navn1,navn2="Jens",navn3) er ulovligt
+# men kan gøres lovligt med:
+# familiefunktion(navn1,navn2="Jens",navn3="") er lovligt
+
