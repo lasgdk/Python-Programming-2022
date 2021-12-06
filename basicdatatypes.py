@@ -8,4 +8,9 @@
 
 #Ctrl+Shift+F10 to run
 
+print("Heltal:")
 print(10)
+print('Floating point tal:')
+print(10.123123)
+print("Komplekst tal:")
+print( 10 + 5j )
