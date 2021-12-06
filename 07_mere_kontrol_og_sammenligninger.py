@@ -26,3 +26,30 @@ if x > (3.3 - tolerance) and x < (3.3 + tolerance):
     print("Ja, nu er de så godt som ens :-)")
     print(3.3)
     print(x)
+
+
+# Or og And:
+# Or skrives som "or"
+# Xor skrives som "^"
+if True or False:
+    print("Altid!")
+if True ^ False:
+    print("Også altid")
+if True and True:
+    print("Også altid")
+if not False:
+    print("Også altid")
+
+
+# Nestede kontrolstrukturer:
+trylletallet=8
+if trylletallet > 4:
+    if trylletallet < 10:   # Man kan indsætte flere nestede kontroller
+        print("Er det måske 8?")
+    else:
+        print("Det er nok ikke 8..")
+else:
+    pass    # Placeholder/tom kommando, nogle gange en placeholder for senere kode.
+# Og så er der også elif, "Else, if;"
+# I dag er der for nyligt også kommet en switch-case kontrolstruktur i Python
+
