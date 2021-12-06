@@ -74,4 +74,11 @@ match farve:
     case _: # Underscore her er default'en. Hvis ingen match på andet, så default til denne.
         print("Farven er noget andet...")
     # Hvis der ikke er en default "case _", så sker der bare ingenting hvis der ikke er match
+    # Med match-case kan kun bruges direkte match, ikke større-end, mindre-end. Så skal der bruges elif i stedet.
+
+# Lige et hint til at lave en streng med små bogstaver:
+brugerinput="Hej Verden!!"
+print(brugerinput)
+brugerinput = brugerinput.lower
+print(brugerinput)
 
