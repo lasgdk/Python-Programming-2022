@@ -10,7 +10,12 @@
 
 print("Heltal:")
 print(10)
-print('Floating point tal:')
+print('Kommatal / \'Floating point\' tal:')
 print(10.123123)
 print("Komplekst tal:")
 print( 10 + 5j )
+
+#Funktionen 'type' fortæller hvilken type data man arbejder med, f.eks.:
+print(type(5))
+print(type(5.3))
+print(type(5+3j))
