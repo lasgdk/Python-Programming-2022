@@ -1,7 +1,8 @@
 # Pythonprogrammering, 2021-12-06, Lars Sommer, Teknologisk Institut
 
 # Overordnede udtrykstyper/expressions: Assignments, aritmetiske, metodekald, deklarationer
-# Husk at køre Pythons stavekontrol (inkl PEP8 kontrol), som bl.a. fikser min manglende whitespace omkring "=" herunder:
+# Husk at køre Pythons stavekontrol (inklusiv PEP8 kontrol), som bl.a. fikser
+#  min manglende whitespace omkring "=" herunder:
 
 var1 = "hej"
 var2 = "med"
@@ -64,4 +65,22 @@ print("verden" in "hej med dig")  # Tester om hej er i strengen, og returnerer T
 
 # Man kan køre en snippet (markering) af kode med Shift+Alt+e
 
+# Konvertere fra en datatype til en anden:
+str(10)  # Integer 10 konverteres til en streng, "10"
+type(str(10))
+
+int('10')  # Lav strengen '10' om til heltallet 10
+type(int('10'))
+
+# Brugerinput via input() gemmes som udgangspunkt altid som strenge. Så her angives det eksplicit at gemmes
+#  som et heltal i stedet:
+user_input_int = int(input("Skriv et tal: "))
+print(user_input_int)
+print(type(user_input_int))
+
+# "modtager"-typen skal naturligvis kunne holde dataen, så f.eks. denne duer ikke:
+# int("10.123")
+# Men denne duer fint:
+float("10.123")
+complex("5+7j")
 
