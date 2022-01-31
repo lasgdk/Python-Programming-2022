@@ -378,8 +378,54 @@ print(x, y, z)
 tuple2 = (x, y, z)
 print(tuple2)
 
+
+# Set, sektion 5.4
+
 # Set, altså samlinger eller mængder, er en usorteret/uordnet bunke af elementer
 # Alle elementer er unikke i set. De bruger til at undersøge om noget er med eller ikke med, til at fjerne dupletter mm.
 # union, fællesmængde
 # intersection, foreningsmængde
+
+# Lister gemmes som dobbelthægtede lister. Sets gemmes som hashtabeller og buckets og hægtede lister i hver bucket.
+#  Det er derfor _meget_ hurtigere at søge i sets
+
+bogstavsæt1=set('lars')
+bogstavsæt2=set('sommer')
+print(bogstavsæt1) # unikke tegn i 1
+print(bogstavsæt2) # unikke tegn i 2
+print(bogstavsæt1 - bogstavsæt2) # Tegn der er i 1, men ikke i 2 (a og l)
+print(bogstavsæt1 | bogstavsæt2) # Tegn der er i 1 eller i 2 eller i begge
+print(bogstavsæt1 & bogstavsæt2) # Tegn der er i både 1 og 2 ( r og s)
+print(bogstavsæt1 ^ bogstavsæt2) # Tegn der er i både 1 eller i 2, men ikke i begge dele
+
+
+# Dictionaries, sektion 5.5
+
+# Én måde at bruge dict på, er til at samle f.eks. aldre på mange:
+aldre = {
+    "hans": 12,
+    "jens": 22,
+    "lars": 36,
+    "peter": 43,
+}
+print(aldre['lars'])
+print(aldre)
+
+# En anden måde er at bruge det til records af f.eks. personer:
+lars = {
+    'navn': 'Lars Hansen',
+    'alder': 12,
+    'adresse': 'Byvejen 123',
+    'forældre': ['hansine', 'peter'],
+}
+print(lars)
+
+# dicts kan skrives på flere måder, hvor nogle er hurtigere/nemmere:
+telefonliste1=dict([('lars', 46562637), ('hans', 23438756), ('jens', 87236712)]) # Den "rigtige" lange måde
+print(telefonliste1)
+telefonliste2=dict(lars=46562637, hans=23438756, jens=87236712) # den kortere smarte måde, så længe keys er pæne simple strenge
+print(telefonliste2) # dict'sne er helt ens
+
+# section 5.6, nu er jeg faldet lidt ud af loopet, og det handler også om loops. Noget med enumerate og zip.
+
 
